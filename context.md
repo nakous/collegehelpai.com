@@ -16,17 +16,17 @@
 collegehelpai.com/
 ├── context.md
 ├── TODO.md                                  # tâches globales
-├── collegehelpai-ex/                        # extension (dépôt git propre : github.com/nakous/collegehelpai-ex)
+├── collegehelpai-ex/                        # extension (v3.0.1)
 └── site/
-    ├── cobra/                               # thème WordPress (v2.1)
-    ├── college-help-ai/                     # plugin core : API de l'extension + config (v1.0.0)
-    ├── college-help-extension-popup/        # plugin : popup marketing d'installation (v1.0.0)
+    ├── cobra/                               # thème WordPress (v3.0.1)
+    ├── college-help-ai/                     # plugin core : API de l'extension + config (v3.0.1)
+    ├── college-help-extension-popup/        # plugin : popup marketing d'installation (v3.0.1)
     └── seo/                                 # vide pour l'instant
 ```
 
-Le dossier racine n'est pas un dépôt git ; seul `collegehelpai-ex/` en est un.
+Un seul dépôt git à la racine : https://github.com/nakous/collegehelpai.com (branche `main`). L'ancien dépôt `nakous/collegehelpai-ex` n'est plus utilisé.
 
-### Extension (`collegehelpai-ex/`, v1.3.0)
+### Extension (`collegehelpai-ex/`, v3.0.1)
 
 - `manifest.json`, `background.js` (service worker : session, API, raccourcis, menu contextuel), `popup.html`, `onboarding.html`.
 - `lib/` : `content.js`/`content.css` (bloc de réponse, overlay de capture), `popup.js`/`popup.css`, `i18n.js`, `onboarding.js`, `storage-safety.js`, `tex-mml-chtml.js`.
@@ -65,6 +65,26 @@ Popup qui invite à installer l'extension, avec statistiques stockées dans la t
 - Thème vers `/public_html/wp-content/themes/` (`cobra`).
 - Extension : `npm run build` dans `collegehelpai-ex/`, puis publication sur le Chrome Web Store et Edge Add-ons.
 - Environnement local : `http://college.localhost/`. Le basculement se fait via `isProduction`, une constante codée en dur dans `background.js` et dans `lib/popup.js`. Elle doit être à `true` pour publier.
+
+## Règle : changement de version
+
+**Chaque changement de version doit être appliqué partout, dans le même commit.** Ne jamais en modifier une seule et laisser les autres en retard.
+
+Endroits à mettre à jour :
+
+| Composant | Fichiers |
+|---|---|
+| Extension | `collegehelpai-ex/manifest.json`, `collegehelpai-ex/package.json`, puis `npm install` pour mettre à jour `package-lock.json` |
+| Plugin `college-help-ai` | en-tête `Version:` de `site/college-help-ai/college-help-ai.php` |
+| Plugin `college-help-extension-popup` | en-tête `Version:` de `college-help-extension-popup.php` et les numéros de version passés à `wp_enqueue_script` / `wp_enqueue_style` (cache des assets) |
+| Thème `cobra` | `Version:` de `style.css`, les en-têtes `Version:` des fichiers CSS et JS du thème, le badge de `site/cobra/README.md` |
+| Documentation | version de l'extension dans `context.md` (structure et titre de section), `TODO.md` (jalon en cours) et `collegehelpai-ex/TODO.md` (« Current Version ») |
+
+Vérification avant de commiter : chercher l'ancien numéro dans tout le projet et s'assurer qu'il ne reste que des mentions voulues (historique, dépendances).
+
+```
+grep -rn "ANCIENNE_VERSION" . --exclude-dir=.git --exclude-dir=node_modules --exclude=package-lock.json --exclude=tex-mml-chtml.js
+```
 
 ## Analytics
 

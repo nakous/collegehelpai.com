@@ -1,6 +1,6 @@
 {
   "name": "collegehelpai",
-  "version": "1.3.0",
+  "version": "3.0.1",
   "scripts": {
     "minify": "node minify.js",
     "build": "npm run minify"

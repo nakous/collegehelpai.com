@@ -3,7 +3,7 @@
  * Plugin Name: College Help Extension Popup
  * Plugin URI: https://collegehelpai.com
  * Description: Smart popup to promote browser extension installation with analytics tracking
- * Version: 1.0.0
+ * Version: 3.0.1
  * Author: CollegeHelp AI
  * License: GPL v2 or later
  */
@@ -60,8 +60,8 @@ class CollegeHelpExtensionPopup {
     public function enqueue_scripts() {
         if (!is_admin() && get_option('college_help_popup_enabled', '1') == '1') {
             wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
-            wp_enqueue_script('college-help-popup', plugin_dir_url(__FILE__) . 'assets/popup.js', array('jquery'), '1.0.0', true);
-            wp_enqueue_style('college-help-popup-style', plugin_dir_url(__FILE__) . 'assets/popup.css', array(), '1.0.0');
+            wp_enqueue_script('college-help-popup', plugin_dir_url(__FILE__) . 'assets/popup.js', array('jquery'), '3.0.1', true);
+            wp_enqueue_style('college-help-popup-style', plugin_dir_url(__FILE__) . 'assets/popup.css', array(), '3.0.1');
             
             // Localize script for AJAX
             wp_localize_script('college-help-popup', 'collegeHelpAjax', array(

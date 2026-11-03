@@ -174,5 +174,5 @@
 ---
 
 **Last Updated:** October 21, 2025
-**Current Version:** 1.2.0
+**Current Version:** 3.0.1
 **Next Target:** 1.3.0 (UI/UX Focus)

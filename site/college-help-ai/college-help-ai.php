@@ -2,7 +2,7 @@
 /*
 Plugin Name: College Help AI
 Description: A plugin to manage user sessions, fetch answers, and interact with the College Help AI Chrome extension.
-Version: 1.0.0
+Version: 3.0.1
 Author: Your Name
 */
 

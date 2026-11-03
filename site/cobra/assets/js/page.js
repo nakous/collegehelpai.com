@@ -1,7 +1,7 @@
 /*
 Page Template JavaScript
 Theme: Cobra
-Version: 2.1
+Version: 3.0.1
 */
 
 document.addEventListener('DOMContentLoaded', function() {

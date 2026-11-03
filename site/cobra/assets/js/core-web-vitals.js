@@ -1,7 +1,7 @@
 /*
 Core Web Vitals Optimization Script
 Theme: Cobra
-Version: 2.1
+Version: 3.0.1
 */
 
 // Intersection Observer for lazy loading videos and heavy content
