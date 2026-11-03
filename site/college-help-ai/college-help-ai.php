@@ -26,13 +26,15 @@ class College_Help_AI_Settings
      */
     public function add_plugin_page()
     {
-        // Add the menu item under Settings
-        add_options_page(
+        // Add the menu item at the root of the admin menu
+        add_menu_page(
             'College Help AI Settings',
             'College Help AI',
             'manage_options',
             'college-help-ai-settings',
-            array($this, 'create_admin_page')
+            array($this, 'create_admin_page'),
+            'dashicons-welcome-learn-more',
+            61
         );
     }
 
@@ -46,6 +48,7 @@ class College_Help_AI_Settings
 ?>
         <div class="wrap">
             <h1>College Help AI Settings</h1>
+            <?php settings_errors(); // Not under Settings anymore, so WordPress no longer prints the "Settings saved" notice itself ?>
             <form method="post" action="options.php">
                 <?php
                 // This prints out all hidden setting fields

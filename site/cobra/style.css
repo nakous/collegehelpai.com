@@ -1783,6 +1783,10 @@ textarea.form-control {
     color: #1a73e8;
 }
 
+.edge_extension .button-icon {
+    color: #0078d4;
+}
+
 .android_app .button-icon {
     color: #3ddc84;
 }
@@ -1793,6 +1797,11 @@ textarea.form-control {
 
 .chrome_extension:hover .button-icon {
     background-color: #1a73e8;
+    color: #fff;
+}
+
+.edge_extension:hover .button-icon {
+    background-color: #0078d4;
     color: #fff;
 }
 

@@ -442,6 +442,12 @@ function _cobra_custom_footer_download()
             'text' => 'Add to Chrome',
             'subtext' => 'Free Extension'
         ),
+        'edge_extension' => array(
+            'option' => get_option('cobra_edge_extension'),
+            'icon' => '<i class="fab fa-edge"></i>',
+            'text' => 'Add to Edge',
+            'subtext' => 'Free Extension'
+        ),
         'android_app' => array(
             'option' => get_option('cobra_android_app'),
             'icon' => '<i class="fab fa-android"></i>',

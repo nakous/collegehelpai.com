@@ -177,6 +177,11 @@ class Cobra_Theme_Settings
             'sanitize_callback' => 'esc_url_raw',
             'default' => ''
         ));
+        register_setting('cobra_social_settings', 'cobra_edge_extension', array(
+            'type' => 'string',
+            'sanitize_callback' => 'esc_url_raw',
+            'default' => ''
+        ));
         register_setting('cobra_social_settings', 'cobra_android_app', array(
             'type' => 'string',
             'sanitize_callback' => 'esc_url_raw',
@@ -368,6 +373,12 @@ class Cobra_Theme_Settings
                 <th scope="row">Chrome Extension</th>
                 <td>
                     <input type="url" name="cobra_chrome_extension" value="<?php echo esc_url(get_option('cobra_chrome_extension')); ?>" class="regular-text">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Edge Extension</th>
+                <td>
+                    <input type="url" name="cobra_edge_extension" value="<?php echo esc_url(get_option('cobra_edge_extension')); ?>" class="regular-text">
                 </td>
             </tr>
             <tr>

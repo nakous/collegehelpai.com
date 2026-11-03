@@ -16,7 +16,7 @@ Ordre de travail : la version **3.0.1** d'abord (publication, analytics, SEO, do
   - Utiliser `rsync` sans `--delete` global : une suppression ne doit jamais toucher les autres plugins ni les `uploads` de WordPress. Le workflow n'utilise `--delete` qu'à l'intérieur des trois dossiers du projet.
 - [ ] Configurer l'environnement GitHub `prod` (Settings > Environments), sans validation manuelle :
   - Secrets : `SSH_PRIVATE_KEY` (clé dédiée au déploiement) et `SSH_KNOWN_HOSTS` (résultat de `ssh-keyscan -p <port> <hote>`).
-  - Variables : `SSH_HOST`, `SSH_USER`, et optionnellement `SSH_PORT` (22 par défaut) et `REMOTE_ROOT` (`/home/onlevelup/public_html` par défaut).
+  - Variables : `SSH_HOST`, `SSH_USER`, et optionnellement `SSH_PORT` (22 par défaut) et `REMOTE_ROOT` (`/home/collegehelpai/public_html` par défaut).
   - Vérifier que `rsync` est installé sur le serveur et que la clé publique est dans `authorized_keys`.
   - Premier test : lancer le workflow à la main (onglet Actions > Run workflow), puis vérifier le thème et les plugins sur le site.
 - [ ] Mettre à jour l'extension (build, vérification `isProduction = true` dans `background.js` et `lib/popup.js`, publication Chrome Web Store et Edge Add-ons).
