@@ -8,37 +8,24 @@ Ordre de travail : la version **3.0.1** d'abord (publication, analytics, SEO, do
 
 - [x] Passer tout le projet à la version 3.0.1 : extension (1.3.0), plugins `college-help-ai` et `college-help-extension-popup` (1.0.0) et thème `cobra` (2.1).
 - [x] Créer le dépôt GitHub du projet : `github.com/nakous/collegehelpai.com` (monorepo : extension, thème, plugins). L'ancien dépôt `collegehelpai-ex` n'est plus utilisé.
-- [ ] Configurer GitHub Actions (`.github/workflows/`) pour déployer en production uniquement le thème et les plugins, rien d'autre (pas de build ni de publication de l'extension) :
+- [ ] Configurer GitHub Actions : le workflow est écrit (`.github/workflows/deploy.yml`, lint PHP puis `rsync` sur SSH, déploiement automatique à chaque push sur `main` qui touche `site/`) mais pas encore testé. Il reste à configurer l'environnement `prod` (voir la tâche suivante) et à lancer un premier déploiement. Il déploie en production uniquement le thème et les plugins, rien d'autre (pas de build ni de publication de l'extension) :
   - `site/cobra/` vers `/public_html/wp-content/themes/cobra/`
   - `site/college-help-ai/` et `site/college-help-extension-popup/` vers `/public_html/wp-content/plugins/`
   - Déclenchement sur push vers `main`, limité aux changements dans `site/` (`paths: site/**`).
   - Accès au serveur par clé SSH (déploiement avec `rsync` sur SSH). Créer une clé dédiée au déploiement, avec sa clé publique dans `authorized_keys` du serveur. Mettre la clé privée, l'hôte, l'utilisateur et le port dans les secrets GitHub du dépôt (`SSH_PRIVATE_KEY`, `SSH_HOST`, `SSH_USER`, `SSH_PORT`), jamais dans le code, utulise les variable de l'env "prod".
-  - Utiliser `rsync` sans `--delete` global : une suppression ne doit jamais toucher les autres plugins ni les `uploads` de WordPress.
+  - Utiliser `rsync` sans `--delete` global : une suppression ne doit jamais toucher les autres plugins ni les `uploads` de WordPress. Le workflow n'utilise `--delete` qu'à l'intérieur des trois dossiers du projet.
+- [ ] Configurer l'environnement GitHub `prod` (Settings > Environments), sans validation manuelle :
+  - Secrets : `SSH_PRIVATE_KEY` (clé dédiée au déploiement) et `SSH_KNOWN_HOSTS` (résultat de `ssh-keyscan -p <port> <hote>`).
+  - Variables : `SSH_HOST`, `SSH_USER`, et optionnellement `SSH_PORT` (22 par défaut) et `REMOTE_ROOT` (`/home/onlevelup/public_html` par défaut).
+  - Vérifier que `rsync` est installé sur le serveur et que la clé publique est dans `authorized_keys`.
+  - Premier test : lancer le workflow à la main (onglet Actions > Run workflow), puis vérifier le thème et les plugins sur le site.
 - [ ] Mettre à jour l'extension (build, vérification `isProduction = true` dans `background.js` et `lib/popup.js`, publication Chrome Web Store et Edge Add-ons).
 - [ ] Mettre à jour le site (thème `cobra`, plugins `college-help-ai` et `college-help-extension-popup` vers `wp-content`).
 - [ ] Renseigner les vrais liens Chrome et Edge dans les options du plugin popup (valeurs par défaut `LINK_CHROME` et `LINK_EDGE`).
 
 ## v3.0.1 — Analytics : Google Analytics vers Matomo
 
-- [ ] Ajouter Matomo dans le thème (`wp_head`), avec le code ci-dessous.
-
-```html
-<!-- Matomo -->
-<script>
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="https://stats.onlevelup.com/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '7']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Code -->
-```
+- [x] Ajouter Matomo dans le thème : fonction `cobra_add_matomo_tracking()` dans `site/cobra/functions.php` (hook `wp_head`, site ID 7 sur `https://stats.onlevelup.com/`, pas de suivi dans l'aperçu du Customizer) et `dns-prefetch` vers `stats.onlevelup.com`. Il sera en ligne au prochain déploiement.
 
 ## v3.0.1 — SEO (`site/seo/` est prévu pour les livrables)
 

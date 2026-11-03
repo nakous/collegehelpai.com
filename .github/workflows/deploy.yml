@@ -1,0 +1,75 @@
+name: Deploy site (theme + plugins)
+
+# Déploie en production uniquement le thème et les plugins de site/ (jamais l'extension).
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'site/**'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+# Un seul déploiement à la fois, sans annuler celui en cours.
+concurrency:
+  group: deploy-prod
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: prod
+    env:
+      SSH_HOST: ${{ vars.SSH_HOST }}
+      SSH_USER: ${{ vars.SSH_USER }}
+      SSH_PORT: ${{ vars.SSH_PORT || '22' }}
+      REMOTE_ROOT: ${{ vars.REMOTE_ROOT || '/home/onlevelup/public_html' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+
+      - name: Lint PHP
+        run: |
+          set -euo pipefail
+          find site -name '*.php' -print0 | xargs -0 -n1 php -l > /dev/null
+
+      - name: Configure SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
+        run: |
+          set -euo pipefail
+          test -n "$SSH_HOST" && test -n "$SSH_USER" && test -n "$SSH_PRIVATE_KEY" && test -n "$SSH_KNOWN_HOSTS"
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          printf '%s\n' "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+
+      - name: Deploy theme and plugins
+        run: |
+          set -euo pipefail
+          SSH_CMD="ssh -p $SSH_PORT -i $HOME/.ssh/deploy_key -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes"
+
+          # source (dans site/) : destination (dans wp-content/)
+          for pair in \
+            "cobra:themes/cobra" \
+            "college-help-ai:plugins/college-help-ai" \
+            "college-help-extension-popup:plugins/college-help-extension-popup"; do
+            src="site/${pair%%:*}/"
+            dest="$REMOTE_ROOT/wp-content/${pair#*:}/"
+            echo "==> $src -> $dest"
+            # --delete reste limité au dossier du projet : jamais les autres plugins ni uploads
+            rsync -rlptz --delete --chmod=D755,F644 --stats \
+              --exclude='README.md' --exclude='assets.zip' --exclude='.git*' \
+              -e "$SSH_CMD" \
+              "$src" "$SSH_USER@$SSH_HOST:$dest"
+          done
+
+      - name: Cleanup SSH key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key

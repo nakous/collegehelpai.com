@@ -478,6 +478,33 @@ function _cobra_custom_footer_download()
     echo '</div>';
 }
 
+// ===== ANALYTICS (MATOMO) =====
+
+// Matomo tracking code (replaces Google Analytics)
+function cobra_add_matomo_tracking() {
+    if (is_customize_preview()) {
+        return;
+    }
+    ?>
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.onlevelup.com/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '7']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+    <?php
+}
+add_action('wp_head', 'cobra_add_matomo_tracking');
+
 // ===== SEO ENHANCEMENTS =====
 
 // Add Schema.org structured data
@@ -698,6 +725,7 @@ function cobra_add_resource_hints($urls, $relation_type) {
         case 'dns-prefetch':
             $urls[] = '//fonts.googleapis.com';
             $urls[] = '//cdnjs.cloudflare.com';
+            $urls[] = '//stats.onlevelup.com';
             // $urls[] = '//www.clarity.ms';
             break;
         case 'preconnect':

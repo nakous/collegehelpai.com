@@ -61,8 +61,9 @@ Popup qui invite à installer l'extension, avec statistiques stockées dans la t
 
 ## Déploiement
 
-- Plugins vers `/public_html/wp-content/plugins/` (`college-help-ai`, `college-help-extension-popup`).
-- Thème vers `/public_html/wp-content/themes/` (`cobra`).
+- Plugins vers `/home/onlevelup/public_html/wp-content/plugins/` (`college-help-ai`, `college-help-extension-popup`).
+- Thème vers `/home/onlevelup/public_html/wp-content/themes/` (`cobra`).
+- Déploiement du thème et des plugins par GitHub Actions (`.github/workflows/deploy.yml`) : lint PHP puis `rsync` sur SSH, automatique à chaque push sur `main` qui modifie `site/`, avec l'environnement GitHub `prod`. Workflow écrit, pas encore testé (voir `TODO.md`).
 - Extension : `npm run build` dans `collegehelpai-ex/`, puis publication sur le Chrome Web Store et Edge Add-ons.
 - Environnement local : `http://college.localhost/`. Le basculement se fait via `isProduction`, une constante codée en dur dans `background.js` et dans `lib/popup.js`. Elle doit être à `true` pour publier.
 
