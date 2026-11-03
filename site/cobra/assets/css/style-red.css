@@ -1,0 +1,89 @@
+/*
+Theme Name: Cobra - Red Variation
+Description: Red color scheme for Cobra theme
+Version: 2.1
+*/
+
+/* Red Color Scheme Variables */
+:root {
+    --primary-color: #dc2626;        /* Red-600 */
+    --primary-hover: #b91c1c;       /* Red-700 */
+    --primary-light: #fecaca;       /* Red-200 */
+    --primary-dark: #991b1b;        /* Red-800 */
+    --accent-color: #f87171;        /* Red-400 */
+    --gradient-primary: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+}
+
+/* Override main theme colors */
+.btn-primary,
+.install-btn,
+.cta-button {
+    background: var(--gradient-primary);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover,
+.install-btn:hover,
+.cta-button:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+/* Navigation styling */
+.navbar-brand,
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, var(--primary-light) 0%, rgba(220, 38, 38, 0.1) 100%);
+}
+
+.hero h1 {
+    color: var(--primary-dark);
+}
+
+/* Feature cards */
+.feature-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 25px rgba(220, 38, 38, 0.15);
+}
+
+.feature-icon {
+    color: var(--primary-color);
+}
+
+/* Links and accents */
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--primary-hover);
+}
+
+/* Progress bars and indicators */
+.progress-bar {
+    background-color: var(--primary-color);
+}
+
+/* Form focus states */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(220, 38, 38, 0.25);
+}
+
+/* Custom animations with red theme */
+@keyframes pulseRed {
+    0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(220, 38, 38, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+}
+
+.pulse-red {
+    animation: pulseRed 2s infinite;
+}

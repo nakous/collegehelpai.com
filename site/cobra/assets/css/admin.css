@@ -1,0 +1,121 @@
+
+/* Admin styles for Cobra Theme Settings */
+.wrap {
+    margin: 20px 20px 0 0;
+}
+
+/* Logo Preview */
+.logo-preview {
+    max-width: 200px;
+    margin-bottom: 15px;
+}
+
+.logo-preview img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+.remove-logo {
+    margin-left: 10px;
+}
+
+/* Social Links */
+#social-links-container {
+    margin-bottom: 20px;
+}
+
+.social-link-field {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.social-link-field select,
+.social-link-field input {
+    flex: 1;
+}
+
+.social-link-field .button {
+    flex: 0 0 auto;
+}
+
+/* Tab Navigation */
+.nav-tab-wrapper {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav-tab {
+    float: left;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    margin-left: .5em;
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 24px;
+    background: #e5e5e5;
+    color: #555;
+    text-decoration: none;
+}
+
+.nav-tab-active,
+.nav-tab:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Form Elements */
+.form-table {
+    margin-top: 20px;
+}
+
+.form-table th {
+    width: 200px;
+    padding: 20px 10px 20px 0;
+}
+
+.form-table td {
+    padding: 15px 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+textarea {
+    width: 100%;
+    max-width: 500px;
+}
+
+textarea.large-text {
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Settings Saved Notice */
+.settings-saved-notice {
+    background: #fff;
+    border-left: 4px solid #46b450;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    margin: 5px 0 15px;
+    padding: 1px 12px;
+    display: none;
+}
+
+/* Additional Links Section */
+h3 {
+    margin: 2em 0 1em;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Button Styling */
+.button {
+    margin-right: 5px;
+}
+
+#add-social-link {
+    margin-bottom: 20px;
+}

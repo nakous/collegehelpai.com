@@ -1,0 +1,76 @@
+/* content.css */
+.collegehelp-answer-block {
+    position: fixed;
+    width: 300px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 2147483647;
+    isolation: isolate;
+    border-bottom: 1px solid #4c5e87;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.collegehelp-answer-block.camouflage {
+    opacity: 0.2;
+    backdrop-filter: blur(5px);
+}
+
+.collegehelp-answer-block.camouflage:hover {
+    opacity: 0.9;
+}
+
+/* Screenshot floating button */
+.collegehelp-screenshot-btn {
+    all: initial;
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    width: 32px !important;
+    height: 32px !important;
+    background: rgba(76, 94, 135, 0.9) !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    z-index: 999998 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 12px rgba(76, 94, 135, 0.3) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 2px !important;
+    border: none !important;
+    padding: 6px !important;
+    margin: 0 !important;
+    opacity: 0.8 !important;
+    z-index: 2147483647 !important;
+    isolation: isolate !important;
+}
+
+.collegehelp-screenshot-btn:hover {
+    background: rgba(76, 94, 135, 0.95) !important;
+    transform: scale(1.05) !important;
+    box-shadow: 0 6px 16px rgba(76, 94, 135, 0.4) !important;
+    opacity: 1 !important;
+}
+
+.collegehelp-screenshot-btn:active {
+    transform: scale(0.98) !important;
+}
+
+.collegehelp-screenshot-btn img {
+    width: 16px !important;
+    height: 16px !important;
+    display: block !important;
+    pointer-events: none !important;
+}
+
+.collegehelp-screenshot-btn svg {
+    width: 28px !important;
+    height: 28px !important;
+    display: block !important;
+    pointer-events: none !important;
+    margin-top: -2px !important;
+}
+

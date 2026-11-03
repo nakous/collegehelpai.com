@@ -1,0 +1,428 @@
+{
+  "shortname": {
+    "message": "College Help AI",
+    "description": "Short name of the extension"
+  },
+  "extensionName": {
+    "message": "AI College Help - for homework and study",
+    "description": "The name of the extension"
+  },
+  "extensionDescription": {
+    "message": "حل الاختبارات والامتحانات والواجبات بأدوات الذكاء الاصطناعي المصممة لمساعدة الطلاب على الدراسة بشكل أكثر فعالية والحصول على شروحات مفصلة.",
+    "description": "The description of the extension"
+  },
+  "contextMenuAsk": {
+    "message": "اسأل College Help",
+    "description": "Context menu item text"
+  },
+  "welcomeMessage": {
+    "message": "سجل الدخول لبدء استخدام أدوات الذكاء الاصطناعي القوية.",
+    "description": "Welcome message shown on the popup"
+  },
+  "settingsTitle": {
+    "message": "الإعدادات",
+    "description": "Title of the settings popup"
+  },
+  "languageLabel": {
+    "message": "اللغة",
+    "description": "Label for language selection"
+  },
+  "camouflageMode": {
+    "message": "وضع التمويه",
+    "description": "Label for camouflage mode toggle"
+  },
+  "loginButton": {
+    "message": "تسجيل الدخول",
+    "description": "Text for login button"
+  },
+  "errorRetryingAnswer": {
+    "message": "خطأ في إعادة المحاولة. حاول مرة أخرى.",
+    "description": "Error message shown when retrying an answer fails"
+  },
+  "popup_anonymous": {
+    "message": "مجهول",
+    "description": "Text for anonymous user"
+  },
+  "takeScreenshot": {
+    "message": "التقاط لقطة شاشة",
+    "description": "Text for taking a screenshot"
+  },
+  "errorCapturingScreenshot": {
+    "message": "خطأ في التقاط لقطة الشاشة. حاول مرة أخرى.",
+    "description": "Error message shown when capturing a screenshot fails"
+  },
+  "registerButton": {
+    "message": "إنشاء حساب",
+    "description": "Text for register button"
+  },
+  "helpLink": {
+    "message": "تحتاج مساعدة؟",
+    "description": "Text for help link"
+  },
+  "screenshotButton": {
+    "message": "التقاط لقطة شاشة",
+    "description": "Text for screenshot button"
+  },
+  "retryButton": {
+    "message": "إعادة المحاولة",
+    "description": "Text for retry button"
+  },
+  "errorSavingPosition": {
+    "message": "خطأ في حفظ الموقع. حاول مرة أخرى.",
+    "description": "Error message shown when saving position fails"
+  },
+  "copyButton": {
+    "message": "نسخ",
+    "description": "Text for copy button"
+  },
+  "copiedText": {
+    "message": "تم النسخ!",
+    "description": "Text shown after successful copy"
+  },
+  "loginPrompt": {
+    "message": "يرجى تسجيل الدخول لاستخدام College Help AI",
+    "description": "Message shown when login is required"
+  },
+  "freeLabel": {
+    "message": "مجاني",
+    "description": "Label for free plan"
+  },
+  "unlimitedLabel": {
+    "message": "غير محدود",
+    "description": "Label for unlimited credits"
+  },
+  "creditsLabel": {
+    "message": "النقاط: $COUNT$",
+    "description": "Label for credits display",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "websiteTooltip": {
+    "message": "زيارة الموقع",
+    "description": "Tooltip for website button"
+  },
+  "settingsTooltip": {
+    "message": "فتح الإعدادات",
+    "description": "Tooltip for settings button"
+  },
+  "closeButton": {
+    "message": "إغلاق",
+    "description": "Text for close button"
+  },
+  "errorRetry": {
+    "message": "حدث خطأ. حاول مرة أخرى.",
+    "description": "Error message shown when an action fails"
+  },
+  "errorCopy": {
+    "message": "فشل في النسخ. حاول مرة أخرى.",
+    "description": "Error message shown when copy fails"
+  },
+  "loginRequired": {
+    "message": "يتطلب تسجيل الدخول لاستخدام هذه الميزة.",
+    "description": "Message shown when login is required"
+  },
+  "errorScreenshot": {
+    "message": "فشل في التقاط لقطة الشاشة. حاول مرة أخرى.",
+    "description": "Error message shown when screenshot fails"
+  },
+  "errorGeneric": {
+    "message": "حدث خطأ. حاول مرة أخرى.",
+    "description": "Generic error message"
+  },
+  "errorNetwork": {
+    "message": "خطأ في الشبكة. تحقق من اتصالك.",
+    "description": "Network error message"
+  },
+  "errorApi": {
+    "message": "خطأ في الخادم. حاول لاحقاً.",
+    "description": "API error message"
+  },
+  "profileLink": {
+    "message": "عرض الملف الشخصي",
+    "description": "Text for profile link"
+  },
+  "versionLabel": {
+    "message": "الإصدار $VERSION$",
+    "description": "Label for version display",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "1.0.0"
+      }
+    }
+  },
+  "shortcutAsk": {
+    "message": "اسأل College Help (Ctrl+Shift+A)",
+    "description": "Description for ask shortcut"
+  },
+  "shortcutScreenshot": {
+    "message": "التقاط لقطة شاشة (Ctrl+Shift+S)",
+    "description": "Description for screenshot shortcut"
+  },
+  "languageEN": {
+    "message": "الإنجليزية",
+    "description": "English language name"
+  },
+  "languageFR": {
+    "message": "الفرنسية",
+    "description": "French language name"
+  },
+  "languageIT": {
+    "message": "الإيطالية",
+    "description": "Italian language name"
+  },
+  "languageES": {
+    "message": "الإسبانية",
+    "description": "Spanish language name"
+  },
+  "languageAR": {
+    "message": "العربية",
+    "description": "Arabic language name"
+  },
+  "languageRU": {
+    "message": "الروسية",
+    "description": "Russian language name"
+  },
+  "camouflageModeLabel": {
+    "message": "وضع التمويه",
+    "description": "Label for enabling camouflage mode"
+  },
+  "screenshotButtonLabel": {
+    "message": "زر لقطة الشاشة",
+    "description": "Label for enabling screenshot button on pages"
+  },
+  "screenshotButtonDescription": {
+    "message": "عرض زر لقطة الشاشة العائم على جميع الصفحات",
+    "description": "Description for screenshot button setting"
+  },
+  "searchingSolution": {
+    "message": "البحث عن الحل...",
+    "description": "رسالة التحميل أثناء البحث عن الإجابة"
+  },
+  "noAnswerFound": {
+    "message": "لم يتم العثور على إجابة. حاول مرة أخرى.",
+    "description": "Message shown when no answer is found"
+  },
+  "loginRequiredMessage": {
+    "message": "تحتاج لتسجيل الدخول لاستخدام هذه الميزة.",
+    "description": "Message shown when login is required"
+  },
+  "processingMessage": {
+    "message": "معالجة طلبك...",
+    "description": "Message shown while processing"
+  },
+  "screenshotInstructions": {
+    "message": "انقر واسحب لتحديد منطقة لقطة الشاشة. اضغط ESC للإلغاء.",
+    "description": "Instructions for screenshot tool"
+  },
+  "responseLanguage": {
+    "message": "لغة الاستجابة: $LANG$",
+    "description": "Label for response language",
+    "placeholders": {
+      "lang": {
+        "content": "$1",
+        "example": "AR"
+      }
+    }
+  },
+  "contextMenuNotSupported": {
+    "message": "القائمة السياقية غير مدعومة في صفحة PDF.",
+    "description": "Message shown when context menu is not supported"
+  },
+  "commandAskCollegeHelp": {
+    "message": "اسأل ذكاء College Help الاصطناعي (تحليل النص المحدد)",
+    "description": "Description for the ask college help keyboard command"
+  },
+  "commandTakeScreenshot": {
+    "message": "التقاط لقطة شاشة (التقاط منطقة للتحليل)",
+    "description": "Description for the take screenshot keyboard command"
+  },
+  "pricingTooltip": {
+    "message": "الخطط أو الأسعار",
+    "description": "تلميح لزر الأسعار"
+  },
+  "userProfile": {
+    "message": "مستخدم",
+    "description": "نص الملف الشخصي الافتراضي للمستخدم"
+  },
+  "planFree": {
+    "message": "مجاني",
+    "description": "تسمية الخطة المجانية"
+  },
+  "creditsCount": {
+    "message": "0",
+    "description": "عداد الرصيد الافتراضي"
+  },
+  "keyboardShortcuts": {
+    "message": "اختصارات لوحة المفاتيح",
+    "description": "تسمية لقسم اختصارات لوحة المفاتيح"
+  },
+  "configureShortcuts": {
+    "message": "تكوين الاختصارات",
+    "description": "نص الزر لتكوين الاختصارات"
+  },
+  "upgradePlan": {
+    "message": "ترقية",
+    "description": "نص زر ترقية الخطة"
+  },
+  "creditsRemaining": {
+    "message": "متبقي",
+    "description": "تسمية للرصيد المتبقي"
+  },
+  "usageToday": {
+    "message": "مستخدم اليوم",
+    "description": "تسمية للاستخدام اليومي"
+  },
+  "planPremium": {
+    "message": "بريميوم",
+    "description": "تسمية الخطة المميزة"
+  },
+  "onboardingTitle": {
+    "message": "مرحباً بك في CollegeHelpAI",
+    "description": "العنوان الرئيسي لصفحة الترحيب"
+  },
+  "onboardingSubtitle": {
+    "message": "رفيقك الذكي في الدراسة للحصول على إجابات فورية لأي سؤال",
+    "description": "العنوان الفرعي الرئيسي لصفحة الترحيب"
+  },
+  "registerNow": {
+    "message": "🚀 التسجيل الآن",
+    "description": "نص زر التسجيل"
+  },
+  "signIn": {
+    "message": "✨ تسجيل الدخول",
+    "description": "نص زر تسجيل الدخول"
+  },
+  "upgradeTitle": {
+    "message": "🎓 أطلق إمكاناتك الأكاديمية",
+    "description": "عنوان قسم الترقية"
+  },
+  "upgradeSubtitle": {
+    "message": "احصل على وصول غير محدود لأدوات الذكاء الاصطناعي المتقدمة وحسّن درجاتك فوراً!",
+    "description": "العنوان الفرعي لقسم الترقية"
+  },
+  "unlimitedQuestions": {
+    "message": "∞ أسئلة غير محدودة",
+    "description": "ميزة الأسئلة غير المحدودة"
+  },
+  "prioritySupport": {
+    "message": "⚡ دعم أولوي",
+    "description": "ميزة الدعم الأولوي"
+  },
+  "advancedFeatures": {
+    "message": "🔬 ميزات متقدمة",
+    "description": "نص الميزات المتقدمة"
+  },
+  "noWatermarks": {
+    "message": "🎨 بدون علامات مائية",
+    "description": "ميزة بدون علامات مائية"
+  },
+  "subscribeNow": {
+    "message": "💎 اشترك الآن - وفر 40%",
+    "description": "نص زر الاشتراك"
+  },
+  "registrationRequired": {
+    "message": "📚 التسجيل مطلوب",
+    "description": "عنوان قسم التسجيل المطلوب"
+  },
+  "registrationDesc": {
+    "message": "أنشئ حسابك المجاني للوصول إلى جميع الميزات وابدأ رحلتك الأكاديمية بمساعدة الذكاء الاصطناعي.",
+    "description": "وصف قسم التسجيل"
+  },
+  "createAccount": {
+    "message": "📝 إنشاء حساب مجاني",
+    "description": "نص زر إنشاء الحساب"
+  },
+  "featuresTitle": {
+    "message": "🌟 ميزات قوية",
+    "description": "عنوان قسم الميزات"
+  },
+  "featureTextTitle": {
+    "message": "تحليل النص الذكي",
+    "description": "عنوان ميزة تحليل النص"
+  },
+  "featureTextDesc": {
+    "message": "حدد أي نص على صفحة ويب واحصل على شروحات فورية وملخصات وتحليل مفصل.",
+    "description": "وصف ميزة تحليل النص"
+  },
+  "featureScreenshotTitle": {
+    "message": "حلال لقطات الشاشة بالذكاء الاصطناعي",
+    "description": "عنوان ميزة لقطة الشاشة"
+  },
+  "featureScreenshotDesc": {
+    "message": "التقط لقطات شاشة لمسائل الرياضيات أو الرسوم البيانية أو الأسئلة واحصل على حلول خطوة بخطوة.",
+    "description": "وصف ميزة لقطة الشاشة"
+  },
+  "featureMultilingualTitle": {
+    "message": "دعم لغوي عالمي",
+    "description": "عنوان الميزة متعددة اللغات"
+  },
+  "featureMultilingualDesc": {
+    "message": "متوفر بلغات متعددة مع ترجمة فورية واستجابات محلية.",
+    "description": "وصف الميزة متعددة اللغات"
+  },
+  "featureSpeedTitle": {
+    "message": "سرعة البرق",
+    "description": "عنوان ميزة السرعة"
+  },
+  "featureSpeedDesc": {
+    "message": "احصل على إجابات في ثوانٍ مع محرك الذكاء الاصطناعي المحسّن المصمم للتفوق الأكاديمي.",
+    "description": "وصف ميزة السرعة"
+  },
+  "featureSecurityTitle": {
+    "message": "خصوصية محمية",
+    "description": "عنوان ميزة الأمان"
+  },
+  "featureSecurityDesc": {
+    "message": "بياناتك مشفرة وآمنة. نحترم خصوصيتك ونزاهتك الأكاديمية.",
+    "description": "وصف ميزة الأمان"
+  },
+  "featureAnalyticsTitle": {
+    "message": "تتبع التقدم",
+    "description": "عنوان ميزة التحليلات"
+  },
+  "featureAnalyticsDesc": {
+    "message": "راقب تقدمك في التعلم واطلع على تحليلات مفصلة لجلسات الدراسة.",
+    "description": "وصف ميزة التحليلات"
+  },
+  "footerQuickLinks": {
+    "message": "روابط سريعة",
+    "description": "عنوان الروابط السريعة للتذييل"
+  },
+  "footerRegister": {
+    "message": "إنشاء حساب",
+    "description": "رابط التسجيل في التذييل"
+  },
+  "footerSignIn": {
+    "message": "تسجيل الدخول",
+    "description": "رابط تسجيل الدخول في التذييل"
+  },
+  "footerSubscribe": {
+    "message": "اشترك",
+    "description": "رابط الاشتراك في التذييل"
+  },
+  "footerSupport": {
+    "message": "الدعم",
+    "description": "عنوان قسم الدعم في التذييل"
+  },
+  "footerFAQ": {
+    "message": "الأسئلة الشائعة",
+    "description": "رابط الأسئلة الشائعة في التذييل"
+  },
+  "footerContact": {
+    "message": "اتصل بنا",
+    "description": "رابط الاتصال في التذييل"
+  },
+  "footerPrivacy": {
+    "message": "سياسة الخصوصية",
+    "description": "رابط سياسة الخصوصية في التذييل"
+  },
+  "footerCopyright": {
+    "message": "© 2025 CollegeHelpAI. جميع الحقوق محفوظة. تمكين الطلاب في جميع أنحاء العالم.",
+    "description": "نص حقوق الطبع والنشر في التذييل"
+  }
+}

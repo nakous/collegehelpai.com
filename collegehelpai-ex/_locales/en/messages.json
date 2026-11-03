@@ -1,0 +1,468 @@
+{
+  "shortname": {
+    "message": "College Help AI",
+    "description": "Short name of the extension"
+  },
+  "extensionName": {
+    "message": "AI College Help - for homework and study",
+    "description": "The name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Solve quizzes, exams, and homework with AI tools designed to help students study more effectively and receive detailed explanations.",
+    "description": "The description of the extension"
+  },
+  "contextMenuAsk": {
+    "message": "Ask College Help",
+    "description": "Context menu item text"
+  },
+  "welcomeMessage": {
+    "message": "Sign in to start using our powerful AI tools.",
+    "description": "Welcome message shown on the popup"
+  },
+  "settingsTitle": {
+    "message": "Settings",
+    "description": "Title of the settings popup"
+  },
+  "languageLabel": {
+    "message": "Language",
+    "description": "Label for language selection"
+  },
+  "camouflageMode": {
+    "message": "Camouflage Mode",
+    "description": "Label for camouflage mode toggle"
+  },
+  "loginButton": {
+    "message": "Login",
+    "description": "Text for login button"
+  },
+  "errorRetryingAnswer": {
+    "message": "Error retrying answer. Please try again.",
+    "description": "Error message shown when retrying an answer fails"
+  },
+  "popup_anonymous": {
+    "message": "Anonymous",
+    "description": "Text for anonymous user"
+  },
+  "takeScreenshot": {
+    "message": "Take Screenshot",
+    "description": "Text for taking a screenshot"
+  },
+  "errorCapturingScreenshot": {
+    "message": "Error capturing screenshot. Please try again.",
+    "description": "Error message shown when capturing a screenshot fails"
+  },
+  "registerButton": {
+    "message": "Register",
+    "description": "Text for register button"
+  },
+  "helpLink": {
+    "message": "Need help?",
+    "description": "Text for help link"
+  },
+  "screenshotButton": {
+    "message": "Take Screenshot",
+    "description": "Text for screenshot button"
+  },
+  "retryButton": {
+    "message": "Retry",
+    "description": "Text for retry button"
+  },
+  "errorSavingPosition": {
+    "message": "Failed to save position. Please try again.",
+    "description": "Error message shown when saving position fails"
+  },
+  "copyButton": {
+    "message": "Copy",
+    "description": "Text for copy button"
+  },
+  "copiedText": {
+    "message": "Copied!",
+    "description": "Text shown after successful copy"
+  },
+  "loginPrompt": {
+    "message": "Please log in to use College Help AI",
+    "description": "Message shown when login is required"
+  },
+  "freeLabel": {
+    "message": "Free",
+    "description": "Label for free plan"
+  },
+  "unlimitedLabel": {
+    "message": "Unlimited",
+    "description": "Label for unlimited credits"
+  },
+  "creditsLabel": {
+    "message": "Credits: $COUNT$",
+    "description": "Label for credits display",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "websiteTooltip": {
+    "message": "Visit Website",
+    "description": "Tooltip for website button"
+  },
+  "settingsTooltip": {
+    "message": "Open Settings",
+    "description": "Tooltip for settings button"
+  },
+  "closeButton": {
+    "message": "Close",
+    "description": "Text for close button"
+  },
+  "errorRetry": {
+    "message": "An error occurred. Please try again.",
+    "description": "Error message shown when an action fails"
+  },
+  "errorCopy": {
+    "message": "Failed to copy. Please try again.",
+    "description": "Error message shown when copy fails"
+  },
+  "loginRequired": {
+    "message": "Login required to use this feature.",
+    "description": "Message shown when login is required"
+  },
+  "errorScreenshot": {
+    "message": "Failed to take screenshot. Please try again.",
+    "description": "Error message shown when screenshot fails"
+  },
+  "errorGeneric": {
+    "message": "An error occurred. Please try again.",
+    "description": "Generic error message"
+  },
+  "errorNetwork": {
+    "message": "Network error. Please check your connection.",
+    "description": "Network error message"
+  },
+  "errorApi": {
+    "message": "Server error. Please try again later.",
+    "description": "API error message"
+  },
+  "profileLink": {
+    "message": "View Profile",
+    "description": "Text for profile link"
+  },
+  "versionLabel": {
+    "message": "Version $VERSION$",
+    "description": "Label for version display",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "1.0.0"
+      }
+    }
+  },
+  "shortcutAsk": {
+    "message": "Ask College Help (Ctrl+Shift+A)",
+    "description": "Description for ask shortcut"
+  },
+  "shortcutScreenshot": {
+    "message": "Take Screenshot (Ctrl+Shift+S)",
+    "description": "Description for screenshot shortcut"
+  },
+  "languageEN": {
+    "message": "English",
+    "description": "English language name"
+  },
+  "languageFR": {
+    "message": "French",
+    "description": "French language name"
+  },
+  "languageIT": {
+    "message": "Italian",
+    "description": "Italian language name"
+  },
+  "languageES": {
+    "message": "Spanish",
+    "description": "Spanish language name"
+  },
+  "languageAR": {
+    "message": "Arabic",
+    "description": "Arabic language name"
+  },
+  "languageRU": {
+    "message": "Russian",
+    "description": "Russian language name"
+  },
+  "camouflageModeLabel": {
+    "message": "Camouflage Mode",
+    "description": "Label for enabling camouflage mode"
+  },
+  "screenshotButtonLabel": {
+    "message": "Screenshot Button",
+    "description": "Label for enabling screenshot button on pages"
+  },
+  "screenshotButtonDescription": {
+    "message": "Show floating screenshot button on all pages for quick capture",
+    "description": "Description for screenshot button setting"
+  },
+  "searchingSolution": {
+    "message": "Searching for solution...",
+    "description": "Loading message while searching for answer"
+  },
+  "noAnswerFound": {
+    "message": "No answer found. Please try again.",
+    "description": "Message shown when no answer is found"
+  },
+  "loginRequiredMessage": {
+    "message": "You need to log in to use this feature.",
+    "description": "Message shown when login is required"
+  },
+  "processingMessage": {
+    "message": "Processing your request...",
+    "description": "Message shown while processing"
+  },
+  "screenshotInstructions": {
+    "message": "Click and drag to select area for screenshot. Press ESC to cancel.",
+    "description": "Instructions for screenshot tool"
+  },
+  "responseLanguage": {
+    "message": "Response Language: $LANG$",
+    "description": "Label for response language",
+    "placeholders": {
+      "lang": {
+        "content": "$1",
+        "example": "EN"
+      }
+    }
+  },
+  "contextMenuNotSupported": {
+    "message": "Context menu not supported on PDF page.",
+    "description": "Message shown when context menu is not supported"
+  },
+  "commandAskCollegeHelp": {
+    "message": "Ask College Help AI (analyze selected text)",
+    "description": "Description for the ask college help keyboard command"
+  },
+  "commandTakeScreenshot": {
+    "message": "Take Screenshot (capture area for analysis)",
+    "description": "Description for the take screenshot keyboard command"
+  },
+  "pricingTooltip": {
+    "message": "Plans or Pricing",
+    "description": "Tooltip for pricing button"
+  },
+  "userProfile": {
+    "message": "User",
+    "description": "Default user profile text"
+  },
+  "planFree": {
+    "message": "Free",
+    "description": "Free plan label"
+  },
+  "creditsCount": {
+    "message": "0",
+    "description": "Default credits count"
+  },
+  "keyboardShortcuts": {
+    "message": "Keyboard Shortcuts",
+    "description": "Label for keyboard shortcuts section"
+  },
+  "configureShortcuts": {
+    "message": "Configure Shortcuts",
+    "description": "Button text for configuring shortcuts"
+  },
+  "upgradePlan": {
+    "message": "Upgrade",
+    "description": "Button text for upgrading plan"
+  },
+  "upgradeTooltip": {
+    "message": "Upgrade to Premium for unlimited access to all AI features",
+    "description": "Tooltip message for upgrade button"
+  },
+  "creditsRemaining": {
+    "message": "remaining",
+    "description": "Label for remaining credits"
+  },
+  "usageToday": {
+    "message": "used today",
+    "description": "Label for daily usage"
+  },
+  "planPremium": {
+    "message": "Premium",
+    "description": "Premium plan label"
+  },
+  "onboardingTitle": {
+    "message": "Welcome to CollegeHelpAI",
+    "description": "Title for onboarding page"
+  },
+  "onboardingSubtitle": {
+    "message": "Your intelligent study companion for getting instant answers to any question",
+    "description": "Subtitle for onboarding page"
+  },
+  "featureTextTitle": {
+    "message": "Smart Text Analysis",
+    "description": "Feature title for text selection"
+  },
+  "featureTextDesc": {
+    "message": "Select any text on a webpage and get instant explanations, summaries, and detailed analysis.",
+    "description": "Feature description for text selection"
+  },
+  "featureScreenshotTitle": {
+    "message": "AI Screenshot Solver",
+    "description": "Feature title for screenshots"
+  },
+  "featureScreenshotDesc": {
+    "message": "Take screenshots of math problems, diagrams, or questions and get step-by-step solutions.",
+    "description": "Feature description for screenshots"
+  },
+  "featureMultilingualTitle": {
+    "message": "Global Language Support",
+    "description": "Feature title for multilingual support"
+  },
+  "featureMultilingualDesc": {
+    "message": "Available in multiple languages with real-time translation and localized responses.",
+    "description": "Feature description for multilingual support"
+  },
+  "shortcutsTitle": {
+    "message": "Keyboard Shortcuts",
+    "description": "Title for shortcuts section"
+  },
+  "onboardingShortcutAsk": {
+    "message": "Ask CollegeHelpAI",
+    "description": "Description for ask shortcut on onboarding"
+  },
+  "onboardingShortcutScreenshot": {
+    "message": "Take Screenshot",
+    "description": "Description for screenshot shortcut on onboarding"
+  },
+  "getStarted": {
+    "message": "Get Started",
+    "description": "Get started button text"
+  },
+  "closeTab": {
+    "message": "Close",
+    "description": "Close tab button text"
+  },
+  "registerNow": {
+    "message": "🚀 Register Now",
+    "description": "Register now button text"
+  },
+  "signIn": {
+    "message": "✨ Sign In",
+    "description": "Sign in button text"
+  },
+  "upgradeTitle": {
+    "message": "🎓 Unlock Your Academic Potential",
+    "description": "Upgrade section title"
+  },
+  "upgradeSubtitle": {
+    "message": "Get unlimited access to advanced AI tools and boost your grades instantly!",
+    "description": "Upgrade section subtitle"
+  },
+  "unlimitedQuestions": {
+    "message": "∞ Unlimited Questions",
+    "description": "Unlimited questions feature"
+  },
+  "prioritySupport": {
+    "message": "⚡ Priority Support",
+    "description": "Priority support feature"
+  },
+  "advancedFeatures": {
+    "message": "🔬 Advanced Features",
+    "description": "Advanced features text"
+  },
+  "noWatermarks": {
+    "message": "🎨 No Watermarks",
+    "description": "No watermarks feature"
+  },
+  "subscribeNow": {
+    "message": "💎 Subscribe Now - Save 40%",
+    "description": "Subscribe now button text"
+  },
+  "registrationRequired": {
+    "message": "📚 Registration Required",
+    "description": "Registration required title"
+  },
+  "registrationDesc": {
+    "message": "Create your free account to access all features and start your academic journey with AI assistance.",
+    "description": "Registration description"
+  },
+  "createAccount": {
+    "message": "📝 Create Free Account",
+    "description": "Create account button text"
+  },
+  "featuresTitle": {
+    "message": "🌟 Powerful Features",
+    "description": "Features section title"
+  },
+  "featureSpeedTitle": {
+    "message": "Lightning Fast",
+    "description": "Speed feature title"
+  },
+  "featureSpeedDesc": {
+    "message": "Get answers in seconds with our optimized AI engine designed for academic excellence.",
+    "description": "Speed feature description"
+  },
+  "featureSecurityTitle": {
+    "message": "Privacy Protected",
+    "description": "Security feature title"
+  },
+  "featureSecurityDesc": {
+    "message": "Your data is encrypted and secure. We respect your privacy and academic integrity.",
+    "description": "Security feature description"
+  },
+  "featureAnalyticsTitle": {
+    "message": "Progress Tracking",
+    "description": "Analytics feature title"
+  },
+  "featureAnalyticsDesc": {
+    "message": "Monitor your learning progress and see detailed analytics of your study sessions.",
+    "description": "Analytics feature description"
+  },
+  "footerQuickLinks": {
+    "message": "Quick Links",
+    "description": "Footer quick links title"
+  },
+  "footerRegister": {
+    "message": "Create Account",
+    "description": "Footer register link"
+  },
+  "footerSignIn": {
+    "message": "Sign In",
+    "description": "Footer sign in link"
+  },
+  "footerSubscribe": {
+    "message": "Subscribe",
+    "description": "Footer subscribe link"
+  },
+  "footerSupport": {
+    "message": "Support",
+    "description": "Footer support section title"
+  },
+  "footerFAQ": {
+    "message": "FAQ",
+    "description": "Footer FAQ link"
+  },
+  "footerContact": {
+    "message": "Contact Us",
+    "description": "Footer contact link"
+  },
+  "footerPrivacy": {
+    "message": "Privacy Policy",
+    "description": "Footer privacy policy link"
+  },
+  "footerCompany": {
+    "message": "Company",
+    "description": "Footer company section title"
+  },
+  "footerAbout": {
+    "message": "About Us",
+    "description": "Footer about link"
+  },
+  "footerBlog": {
+    "message": "Blog",
+    "description": "Footer blog link"
+  },
+  "footerCareers": {
+    "message": "Careers",
+    "description": "Footer careers link"
+  },
+  "footerCopyright": {
+    "message": "© 2025 CollegeHelpAI. All rights reserved. Empowering students worldwide.",
+    "description": "Footer copyright text"
+  }
+}

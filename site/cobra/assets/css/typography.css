@@ -1,0 +1,98 @@
+/**
+ * Font Loading Optimization
+ * Alternative approach using CSS @font-face with local fallbacks
+ */
+
+/* Modern font stack with excellent fallbacks */
+:root {
+    --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-mono: "SF Mono", Monaco, Inconsolata, "Roboto Mono", "Source Code Pro", monospace;
+}
+
+/* Default fonts (immediate load) */
+body {
+    font-family: var(--font-system);
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings with better weight distribution */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-system);
+    font-weight: 600;
+    line-height: 1.3;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2.5rem; font-weight: 700; }
+h2 { font-size: 2rem; font-weight: 600; }
+h3 { font-size: 1.75rem; font-weight: 600; }
+h4 { font-size: 1.5rem; font-weight: 500; }
+h5 { font-size: 1.25rem; font-weight: 500; }
+h6 { font-size: 1.125rem; font-weight: 500; }
+
+/* Enhanced typography when custom fonts load */
+.fonts-enhanced body {
+    font-family: "Inter", var(--font-system);
+}
+
+.fonts-enhanced h1,
+.fonts-enhanced h2,
+.fonts-enhanced h3,
+.fonts-enhanced h4,
+.fonts-enhanced h5,
+.fonts-enhanced h6 {
+    font-family: "Inter", var(--font-system);
+}
+
+/* Code elements */
+code, pre, kbd, samp {
+    font-family: var(--font-mono);
+    font-size: 0.875em;
+}
+
+/* Button typography */
+.btn, button {
+    font-family: inherit;
+    font-weight: 500;
+    letter-spacing: 0.025em;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.25rem; }
+    h5 { font-size: 1.125rem; }
+    h6 { font-size: 1rem; }
+}
+
+/* Performance: reduce repaints */
+* {
+    -webkit-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
+
+/* Print styles */
+@media print {
+    body {
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: Arial, sans-serif;
+        page-break-after: avoid;
+    }
+}

@@ -1,0 +1,252 @@
+/*
+Core Web Vitals CSS Optimizations
+Theme: Cobra
+Version: 2.1
+*/
+
+/* Performance optimizations for CLS (Cumulative Layout Shift) */
+
+/* Ensure images have dimensions to prevent layout shift */
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+/* Optimize loading states */
+.loading-placeholder {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* Critical above-the-fold optimizations */
+.hero-section {
+    contain: layout style paint;
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+.hero-content {
+    contain: layout style;
+}
+
+/* Video optimizations */
+video {
+    background: #000;
+    contain: layout style;
+}
+
+video:not([autoplay]) {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23f0f0f0"/><text x="50" y="50" text-anchor="middle" dy=".3em" fill="%23999">Loading...</text></svg>');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Optimize font loading to prevent FOIT/FOUT */
+@font-face {
+    font-family: 'Inter';
+    src: url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    font-display: swap;
+}
+
+/* Reduce layout shift for dynamic content */
+.content-container {
+    min-height: 60vh;
+    contain: layout;
+}
+
+/* Optimize carousel/slider for better CLS */
+.carousel,
+.slider {
+    contain: layout style;
+    aspect-ratio: 16/9;
+}
+
+/* Intersection Observer fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Optimize button interactions */
+.btn,
+.install-btn {
+    contain: layout style;
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+.btn:hover,
+.install-btn:hover {
+    transform: translateY(-2px) translateZ(0);
+}
+
+/* Critical resource preload indicators */
+.preload-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #69b8db, #4c5e87);
+    z-index: 9999;
+    animation: preloader 2s ease-in-out infinite;
+}
+
+@keyframes preloader {
+    0%, 100% { transform: translateX(-100%); }
+    50% { transform: translateX(100%); }
+}
+
+/* Optimize iframe loading */
+iframe {
+    contain: layout style;
+    background: #f0f0f0;
+}
+
+iframe[data-src] {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360"><rect width="640" height="360" fill="%23f0f0f0"/><circle cx="320" cy="180" r="30" fill="%23999"/><polygon points="310,165 310,195 335,180" fill="%23fff"/></svg>');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Reduce paint complexity */
+.complex-bg {
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* Optimize text rendering */
+body {
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Critical path rendering optimization */
+.above-fold {
+    contain: layout style paint;
+}
+
+.below-fold {
+    contain: layout;
+}
+
+/* Optimize form controls */
+input, textarea, select {
+    contain: layout style;
+}
+
+/* Responsive image optimization */
+.responsive-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: attr(width) / attr(height);
+}
+
+/* Optimize grid layouts */
+.grid-container {
+    contain: layout style;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Performance-first animations */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* GPU acceleration for smooth scrolling */
+.scroll-smooth {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Optimize background images */
+.bg-image {
+    background-attachment: scroll; /* Better performance than fixed */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+}
+
+/* Critical CSS for faster First Contentful Paint */
+.critical-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+.non-critical-content {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+
+.non-critical-content.loaded {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Optimize table rendering */
+table {
+    contain: layout style;
+    table-layout: fixed;
+}
+
+/* Lazy loading placeholder styles */
+.lazy-placeholder {
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* Optimize SVG icons */
+.icon-svg {
+    contain: layout style paint;
+    pointer-events: none;
+}
+
+/* Performance monitoring styles */
+.perf-debug {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    z-index: 9999;
+    font-family: monospace;
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .perf-debug {
+        display: block;
+    }
+}

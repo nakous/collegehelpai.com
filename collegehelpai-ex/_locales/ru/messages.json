@@ -1,0 +1,428 @@
+{
+  "shortname": {
+    "message": "College Help AI",
+    "description": "Short name of the extension"
+  },
+  "extensionName": {
+    "message": "AI College Help - for homework and study",
+    "description": "The name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Решайте викторины, экзамены и домашние задания с помощью инструментов ИИ, предназначенных для более эффективного обучения студентов и получения подробных объяснений.",
+    "description": "The description of the extension"
+  },
+  "contextMenuAsk": {
+    "message": "Спросить College Help",
+    "description": "Context menu item text"
+  },
+  "welcomeMessage": {
+    "message": "Войдите, чтобы начать использовать наши мощные инструменты ИИ.",
+    "description": "Welcome message shown on the popup"
+  },
+  "settingsTitle": {
+    "message": "Настройки",
+    "description": "Title of the settings popup"
+  },
+  "languageLabel": {
+    "message": "Язык",
+    "description": "Label for language selection"
+  },
+  "camouflageMode": {
+    "message": "Режим Маскировки",
+    "description": "Label for camouflage mode toggle"
+  },
+  "loginButton": {
+    "message": "Войти",
+    "description": "Text for login button"
+  },
+  "errorRetryingAnswer": {
+    "message": "Ошибка при повторной попытке. Попробуйте снова.",
+    "description": "Error message shown when retrying an answer fails"
+  },
+  "popup_anonymous": {
+    "message": "Анонимный",
+    "description": "Text for anonymous user"
+  },
+  "takeScreenshot": {
+    "message": "Сделать Скриншот",
+    "description": "Text for taking a screenshot"
+  },
+  "errorCapturingScreenshot": {
+    "message": "Ошибка создания скриншота. Попробуйте снова.",
+    "description": "Error message shown when capturing a screenshot fails"
+  },
+  "registerButton": {
+    "message": "Зарегистрироваться",
+    "description": "Text for register button"
+  },
+  "helpLink": {
+    "message": "Нужна помощь?",
+    "description": "Text for help link"
+  },
+  "screenshotButton": {
+    "message": "Сделать Скриншот",
+    "description": "Text for screenshot button"
+  },
+  "retryButton": {
+    "message": "Повторить",
+    "description": "Text for retry button"
+  },
+  "errorSavingPosition": {
+    "message": "Ошибка сохранения позиции. Попробуйте снова.",
+    "description": "Error message shown when saving position fails"
+  },
+  "copyButton": {
+    "message": "Копировать",
+    "description": "Text for copy button"
+  },
+  "copiedText": {
+    "message": "Скопировано!",
+    "description": "Text shown after successful copy"
+  },
+  "loginPrompt": {
+    "message": "Пожалуйста, войдите для использования College Help AI",
+    "description": "Message shown when login is required"
+  },
+  "freeLabel": {
+    "message": "Бесплатно",
+    "description": "Label for free plan"
+  },
+  "unlimitedLabel": {
+    "message": "Безлимитно",
+    "description": "Label for unlimited credits"
+  },
+  "creditsLabel": {
+    "message": "Кредиты: $COUNT$",
+    "description": "Label for credits display",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "websiteTooltip": {
+    "message": "Посетить Сайт",
+    "description": "Tooltip for website button"
+  },
+  "settingsTooltip": {
+    "message": "Открыть Настройки",
+    "description": "Tooltip for settings button"
+  },
+  "closeButton": {
+    "message": "Закрыть",
+    "description": "Text for close button"
+  },
+  "errorRetry": {
+    "message": "Произошла ошибка. Попробуйте снова.",
+    "description": "Error message shown when an action fails"
+  },
+  "errorCopy": {
+    "message": "Ошибка копирования. Попробуйте снова.",
+    "description": "Error message shown when copy fails"
+  },
+  "loginRequired": {
+    "message": "Требуется вход для использования этой функции.",
+    "description": "Message shown when login is required"
+  },
+  "errorScreenshot": {
+    "message": "Ошибка создания скриншота. Попробуйте снова.",
+    "description": "Error message shown when screenshot fails"
+  },
+  "errorGeneric": {
+    "message": "Произошла ошибка. Попробуйте снова.",
+    "description": "Generic error message"
+  },
+  "errorNetwork": {
+    "message": "Ошибка сети. Проверьте соединение.",
+    "description": "Network error message"
+  },
+  "errorApi": {
+    "message": "Ошибка сервера. Попробуйте позже.",
+    "description": "API error message"
+  },
+  "profileLink": {
+    "message": "Просмотр Профиля",
+    "description": "Text for profile link"
+  },
+  "versionLabel": {
+    "message": "Версия $VERSION$",
+    "description": "Label for version display",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "1.0.0"
+      }
+    }
+  },
+  "shortcutAsk": {
+    "message": "Спросить College Help (Ctrl+Shift+A)",
+    "description": "Description for ask shortcut"
+  },
+  "shortcutScreenshot": {
+    "message": "Сделать Скриншот (Ctrl+Shift+S)",
+    "description": "Description for screenshot shortcut"
+  },
+  "languageEN": {
+    "message": "Английский",
+    "description": "English language name"
+  },
+  "languageFR": {
+    "message": "Французский",
+    "description": "French language name"
+  },
+  "languageIT": {
+    "message": "Итальянский",
+    "description": "Italian language name"
+  },
+  "languageES": {
+    "message": "Испанский",
+    "description": "Spanish language name"
+  },
+  "languageAR": {
+    "message": "Арабский",
+    "description": "Arabic language name"
+  },
+  "languageRU": {
+    "message": "Русский",
+    "description": "Russian language name"
+  },
+  "camouflageModeLabel": {
+    "message": "Режим Маскировки",
+    "description": "Label for enabling camouflage mode"
+  },
+  "screenshotButtonLabel": {
+    "message": "Кнопка Скриншота",
+    "description": "Label for enabling screenshot button on pages"
+  },
+  "screenshotButtonDescription": {
+    "message": "Показать плавающую кнопку скриншота на всех страницах",
+    "description": "Description for screenshot button setting"
+  },
+  "searchingSolution": {
+    "message": "Поиск решения...",
+    "description": "Сообщение загрузки при поиске ответа"
+  },
+  "noAnswerFound": {
+    "message": "Ответ не найден. Попробуйте снова.",
+    "description": "Message shown when no answer is found"
+  },
+  "loginRequiredMessage": {
+    "message": "Необходимо войти для использования этой функции.",
+    "description": "Message shown when login is required"
+  },
+  "processingMessage": {
+    "message": "Обработка вашего запроса...",
+    "description": "Message shown while processing"
+  },
+  "screenshotInstructions": {
+    "message": "Нажмите и перетащите для выделения области скриншота. Нажмите ESC для отмены.",
+    "description": "Instructions for screenshot tool"
+  },
+  "responseLanguage": {
+    "message": "Язык Ответа: $LANG$",
+    "description": "Label for response language",
+    "placeholders": {
+      "lang": {
+        "content": "$1",
+        "example": "RU"
+      }
+    }
+  },
+  "contextMenuNotSupported": {
+    "message": "Контекстное меню не поддерживается на PDF странице.",
+    "description": "Message shown when context menu is not supported"
+  },
+  "commandAskCollegeHelp": {
+    "message": "Спросить ИИ College Help (анализировать выделенный текст)",
+    "description": "Description for the ask college help keyboard command"
+  },
+  "commandTakeScreenshot": {
+    "message": "Сделать скриншот (захватить область для анализа)",
+    "description": "Description for the take screenshot keyboard command"
+  },
+  "pricingTooltip": {
+    "message": "Планы или Цены",
+    "description": "Подсказка для кнопки цены"
+  },
+  "userProfile": {
+    "message": "Пользователь",
+    "description": "Текст профиля пользователя по умолчанию"
+  },
+  "planFree": {
+    "message": "Бесплатно",
+    "description": "Метка бесплатного плана"
+  },
+  "creditsCount": {
+    "message": "0",
+    "description": "Счетчик кредитов по умолчанию"
+  },
+  "keyboardShortcuts": {
+    "message": "Клавиатурные Сочетания",
+    "description": "Метка для раздела клавиатурных сочетаний"
+  },
+  "configureShortcuts": {
+    "message": "Настроить Сочетания",
+    "description": "Текст кнопки для настройки сочетаний"
+  },
+  "upgradePlan": {
+    "message": "Обновить",
+    "description": "Текст кнопки для обновления плана"
+  },
+  "creditsRemaining": {
+    "message": "осталось",
+    "description": "Метка для оставшихся кредитов"
+  },
+  "usageToday": {
+    "message": "использовано сегодня",
+    "description": "Метка для дневного использования"
+  },
+  "planPremium": {
+    "message": "Премиум",
+    "description": "Метка премиум плана"
+  },
+  "onboardingTitle": {
+    "message": "Добро пожаловать в CollegeHelpAI",
+    "description": "Основной заголовок страницы приветствия"
+  },
+  "onboardingSubtitle": {
+    "message": "Ваш умный помощник в учёбе для получения мгновенных ответов на любые вопросы",
+    "description": "Основной подзаголовок страницы приветствия"
+  },
+  "registerNow": {
+    "message": "🚀 Зарегистрироваться сейчас",
+    "description": "Текст кнопки регистрации"
+  },
+  "signIn": {
+    "message": "✨ Войти",
+    "description": "Текст кнопки входа"
+  },
+  "upgradeTitle": {
+    "message": "🎓 Раскройте свой академический потенциал",
+    "description": "Заголовок секции обновления"
+  },
+  "upgradeSubtitle": {
+    "message": "Получите неограниченный доступ к продвинутым инструментам ИИ и мгновенно улучшите свои оценки!",
+    "description": "Подзаголовок секции обновления"
+  },
+  "unlimitedQuestions": {
+    "message": "∞ Неограниченные вопросы",
+    "description": "Функция неограниченных вопросов"
+  },
+  "prioritySupport": {
+    "message": "⚡ Приоритетная поддержка",
+    "description": "Функция приоритетной поддержки"
+  },
+  "advancedFeatures": {
+    "message": "🔬 Продвинутые функции",
+    "description": "Текст продвинутых функций"
+  },
+  "noWatermarks": {
+    "message": "🎨 Без водяных знаков",
+    "description": "Функция без водяных знаков"
+  },
+  "subscribeNow": {
+    "message": "💎 Подписаться сейчас - Скидка 40%",
+    "description": "Текст кнопки подписки"
+  },
+  "registrationRequired": {
+    "message": "📚 Требуется регистрация",
+    "description": "Заголовок секции обязательной регистрации"
+  },
+  "registrationDesc": {
+    "message": "Создайте бесплатную учётную запись для доступа ко всем функциям и начните свой академический путь с помощью ИИ.",
+    "description": "Описание секции регистрации"
+  },
+  "createAccount": {
+    "message": "📝 Создать бесплатную учётную запись",
+    "description": "Текст кнопки создания учётной записи"
+  },
+  "featuresTitle": {
+    "message": "🌟 Мощные функции",
+    "description": "Заголовок секции функций"
+  },
+  "featureTextTitle": {
+    "message": "Умный анализ текста",
+    "description": "Заголовок функции анализа текста"
+  },
+  "featureTextDesc": {
+    "message": "Выделите любой текст на веб-странице и получите мгновенные объяснения, резюме и подробный анализ.",
+    "description": "Описание функции анализа текста"
+  },
+  "featureScreenshotTitle": {
+    "message": "ИИ решатель скриншотов",
+    "description": "Заголовок функции скриншотов"
+  },
+  "featureScreenshotDesc": {
+    "message": "Делайте скриншоты математических задач, диаграмм или вопросов и получайте пошаговые решения.",
+    "description": "Описание функции скриншотов"
+  },
+  "featureMultilingualTitle": {
+    "message": "Глобальная языковая поддержка",
+    "description": "Заголовок многоязычной функции"
+  },
+  "featureMultilingualDesc": {
+    "message": "Доступно на множественных языках с переводом в реальном времени и локализованными ответами.",
+    "description": "Описание многоязычной функции"
+  },
+  "featureSpeedTitle": {
+    "message": "Молниеносная скорость",
+    "description": "Заголовок функции скорости"
+  },
+  "featureSpeedDesc": {
+    "message": "Получайте ответы за секунды с нашим оптимизированным ИИ двигателем, созданным для академического превосходства.",
+    "description": "Описание функции скорости"
+  },
+  "featureSecurityTitle": {
+    "message": "Защищённая конфиденциальность",
+    "description": "Заголовок функции безопасности"
+  },
+  "featureSecurityDesc": {
+    "message": "Ваши данные зашифрованы и защищены. Мы уважаем вашу конфиденциальность и академическую честность.",
+    "description": "Описание функции безопасности"
+  },
+  "featureAnalyticsTitle": {
+    "message": "Отслеживание прогресса",
+    "description": "Заголовок функции аналитики"
+  },
+  "featureAnalyticsDesc": {
+    "message": "Отслеживайте свой прогресс в обучении и просматривайте подробную аналитику ваших учебных сессий.",
+    "description": "Описание функции аналитики"
+  },
+  "footerQuickLinks": {
+    "message": "Быстрые ссылки",
+    "description": "Заголовок быстрых ссылок подвала"
+  },
+  "footerRegister": {
+    "message": "Создать учётную запись",
+    "description": "Ссылка регистрации подвала"
+  },
+  "footerSignIn": {
+    "message": "Войти",
+    "description": "Ссылка входа подвала"
+  },
+  "footerSubscribe": {
+    "message": "Подписаться",
+    "description": "Ссылка подписки подвала"
+  },
+  "footerSupport": {
+    "message": "Поддержка",
+    "description": "Заголовок секции поддержки подвала"
+  },
+  "footerFAQ": {
+    "message": "Частые вопросы",
+    "description": "Ссылка FAQ подвала"
+  },
+  "footerContact": {
+    "message": "Связаться с нами",
+    "description": "Ссылка контактов подвала"
+  },
+  "footerPrivacy": {
+    "message": "Политика конфиденциальности",
+    "description": "Ссылка политики конфиденциальности подвала"
+  },
+  "footerCopyright": {
+    "message": "© 2025 CollegeHelpAI. Все права защищены. Расширяем возможности студентов по всему миру.",
+    "description": "Текст авторских прав подвала"
+  }
+}

@@ -1,0 +1,67 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background elements -->
+    <circle cx="400" cy="300" r="250" fill="#f8f9fc" />
+    <circle cx="550" cy="150" r="80" fill="rgba(105, 184, 219, 0.1)" />
+    <circle cx="200" cy="450" r="60" fill="rgba(76, 94, 135, 0.05)" />
+    
+    <!-- 404 Text -->
+    <text x="400" y="320" font-family="Arial, sans-serif" font-size="180" font-weight="bold" fill="#69b8db" text-anchor="middle">404</text>
+    
+    <!-- Decorative elements -->
+    <g class="search-icon" transform="translate(320, 220) scale(0.8)">
+      <circle cx="50" cy="50" r="30" fill="none" stroke="#4c5e87" stroke-width="8" />
+      <line x1="70" y1="70" x2="100" y2="100" stroke="#4c5e87" stroke-width="8" stroke-linecap="round" />
+    </g>
+    
+    <!-- Question marks -->
+    <text x="250" y="230" font-family="Arial, sans-serif" font-size="70" font-weight="bold" fill="rgba(105, 184, 219, 0.3)" text-anchor="middle">?</text>
+    <text x="520" y="180" font-family="Arial, sans-serif" font-size="50" font-weight="bold" fill="rgba(105, 184, 219, 0.3)" text-anchor="middle">?</text>
+    <text x="600" y="280" font-family="Arial, sans-serif" font-size="60" font-weight="bold" fill="rgba(105, 184, 219, 0.3)" text-anchor="middle">?</text>
+    
+    <!-- Broken link symbol -->
+    <g transform="translate(450, 420) rotate(-15)">
+      <path d="M30,20 L60,20 A20,20 0 0 1 80,40 L80,60" fill="none" stroke="#4c5e87" stroke-width="8" stroke-linecap="round" />
+      <path d="M90,80 L60,80 A20,20 0 0 1 40,60 L40,40" fill="none" stroke="#4c5e87" stroke-width="8" stroke-linecap="round" />
+      <line x1="34" y1="46" x2="28" y2="40" stroke="#4c5e87" stroke-width="8" stroke-linecap="round" />
+      <line x1="86" y1="76" x2="92" y2="82" stroke="#4c5e87" stroke-width="8" stroke-linecap="round" />
+    </g>
+    
+    <!-- Compass -->
+    <g transform="translate(200, 350)">
+      <circle cx="40" cy="40" r="35" fill="white" stroke="#4c5e87" stroke-width="3" />
+      <line x1="40" y1="15" x2="40" y2="65" stroke="#69b8db" stroke-width="3" />
+      <line x1="15" y1="40" x2="65" y2="40" stroke="#4c5e87" stroke-width="3" />
+      <circle cx="40" cy="40" r="5" fill="#69b8db" />
+    </g>
+    
+    <!-- Document icon -->
+    <g transform="translate(650, 350)">
+      <rect x="10" y="10" width="50" height="70" rx="5" fill="white" stroke="#4c5e87" stroke-width="3" />
+      <line x1="20" y1="30" x2="50" y2="30" stroke="#69b8db" stroke-width="3" />
+      <line x1="20" y1="45" x2="50" y2="45" stroke="#69b8db" stroke-width="3" />
+      <line x1="20" y1="60" x2="40" y2="60" stroke="#69b8db" stroke-width="3" />
+    </g>
+    
+    <!-- Animated elements -->
+    <style>
+      @keyframes float {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0); }
+      }
+      
+      @keyframes pulse {
+        0% { opacity: 0.3; }
+        50% { opacity: 0.8; }
+        100% { opacity: 0.3; }
+      }
+      
+      .search-icon {
+        animation: float 4s ease-in-out infinite;
+      }
+      
+      text {
+        animation: pulse 3s ease-in-out infinite;
+      }
+    </style>
+  </svg>

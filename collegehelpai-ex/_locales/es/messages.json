@@ -1,0 +1,428 @@
+{
+  "shortname": {
+    "message": "College Help AI",
+    "description": "Short name of the extension"
+  },
+  "extensionName": {
+    "message": "AI College Help - for homework and study",
+    "description": "The name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Resuelve cuestionarios, exámenes y tareas con herramientas de IA diseñadas para ayudar a los estudiantes a estudiar de manera más efectiva y recibir explicaciones detalladas.",
+    "description": "The description of the extension"
+  },
+  "contextMenuAsk": {
+    "message": "Preguntar a College Help",
+    "description": "Context menu item text"
+  },
+  "welcomeMessage": {
+    "message": "Inicia sesión para comenzar a usar nuestras poderosas herramientas de IA.",
+    "description": "Welcome message shown on the popup"
+  },
+  "settingsTitle": {
+    "message": "Configuración",
+    "description": "Title of the settings popup"
+  },
+  "languageLabel": {
+    "message": "Idioma",
+    "description": "Label for language selection"
+  },
+  "camouflageMode": {
+    "message": "Modo Camuflaje",
+    "description": "Label for camouflage mode toggle"
+  },
+  "loginButton": {
+    "message": "Iniciar Sesión",
+    "description": "Text for login button"
+  },
+  "errorRetryingAnswer": {
+    "message": "Error al reintentar respuesta. Por favor, inténtalo de nuevo.",
+    "description": "Error message shown when retrying an answer fails"
+  },
+  "popup_anonymous": {
+    "message": "Anónimo",
+    "description": "Text for anonymous user"
+  },
+  "takeScreenshot": {
+    "message": "Tomar Captura de Pantalla",
+    "description": "Text for taking a screenshot"
+  },
+  "errorCapturingScreenshot": {
+    "message": "Error al capturar pantalla. Por favor, inténtalo de nuevo.",
+    "description": "Error message shown when capturing a screenshot fails"
+  },
+  "registerButton": {
+    "message": "Registrarse",
+    "description": "Text for register button"
+  },
+  "helpLink": {
+    "message": "¿Necesitas ayuda?",
+    "description": "Text for help link"
+  },
+  "screenshotButton": {
+    "message": "Tomar Captura de Pantalla",
+    "description": "Text for screenshot button"
+  },
+  "retryButton": {
+    "message": "Reintentar",
+    "description": "Text for retry button"
+  },
+  "errorSavingPosition": {
+    "message": "Error al guardar posición. Por favor, inténtalo de nuevo.",
+    "description": "Error message shown when saving position fails"
+  },
+  "copyButton": {
+    "message": "Copiar",
+    "description": "Text for copy button"
+  },
+  "copiedText": {
+    "message": "¡Copiado!",
+    "description": "Text shown after successful copy"
+  },
+  "loginPrompt": {
+    "message": "Por favor, inicia sesión para usar College Help AI",
+    "description": "Message shown when login is required"
+  },
+  "freeLabel": {
+    "message": "Gratis",
+    "description": "Label for free plan"
+  },
+  "unlimitedLabel": {
+    "message": "Ilimitado",
+    "description": "Label for unlimited credits"
+  },
+  "creditsLabel": {
+    "message": "Créditos: $COUNT$",
+    "description": "Label for credits display",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "websiteTooltip": {
+    "message": "Visitar Sitio Web",
+    "description": "Tooltip for website button"
+  },
+  "settingsTooltip": {
+    "message": "Abrir Configuración",
+    "description": "Tooltip for settings button"
+  },
+  "closeButton": {
+    "message": "Cerrar",
+    "description": "Text for close button"
+  },
+  "errorRetry": {
+    "message": "Ocurrió un error. Por favor, inténtalo de nuevo.",
+    "description": "Error message shown when an action fails"
+  },
+  "errorCopy": {
+    "message": "Error al copiar. Por favor, inténtalo de nuevo.",
+    "description": "Error message shown when copy fails"
+  },
+  "loginRequired": {
+    "message": "Se requiere iniciar sesión para usar esta función.",
+    "description": "Message shown when login is required"
+  },
+  "errorScreenshot": {
+    "message": "Error al tomar captura. Por favor, inténtalo de nuevo.",
+    "description": "Error message shown when screenshot fails"
+  },
+  "errorGeneric": {
+    "message": "Ocurrió un error. Por favor, inténtalo de nuevo.",
+    "description": "Generic error message"
+  },
+  "errorNetwork": {
+    "message": "Error de red. Por favor, verifica tu conexión.",
+    "description": "Network error message"
+  },
+  "errorApi": {
+    "message": "Error del servidor. Por favor, inténtalo más tarde.",
+    "description": "API error message"
+  },
+  "profileLink": {
+    "message": "Ver Perfil",
+    "description": "Text for profile link"
+  },
+  "versionLabel": {
+    "message": "Versión $VERSION$",
+    "description": "Label for version display",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "1.0.0"
+      }
+    }
+  },
+  "shortcutAsk": {
+    "message": "Preguntar a College Help (Ctrl+Shift+A)",
+    "description": "Description for ask shortcut"
+  },
+  "shortcutScreenshot": {
+    "message": "Tomar Captura de Pantalla (Ctrl+Shift+S)",
+    "description": "Description for screenshot shortcut"
+  },
+  "languageEN": {
+    "message": "Inglés",
+    "description": "English language name"
+  },
+  "languageFR": {
+    "message": "Francés",
+    "description": "French language name"
+  },
+  "languageIT": {
+    "message": "Italiano",
+    "description": "Italian language name"
+  },
+  "languageES": {
+    "message": "Español",
+    "description": "Spanish language name"
+  },
+  "languageAR": {
+    "message": "Árabe",
+    "description": "Arabic language name"
+  },
+  "languageRU": {
+    "message": "Ruso",
+    "description": "Russian language name"
+  },
+  "camouflageModeLabel": {
+    "message": "Modo Camuflaje",
+    "description": "Label for enabling camouflage mode"
+  },
+  "screenshotButtonLabel": {
+    "message": "Botón de Captura",
+    "description": "Label for enabling screenshot button on pages"
+  },
+  "screenshotButtonDescription": {
+    "message": "Mostrar botón flotante de captura de pantalla en todas las páginas",
+    "description": "Description for screenshot button setting"
+  },
+  "searchingSolution": {
+    "message": "Buscando solución...",
+    "description": "Mensaje de carga mientras se busca la respuesta"
+  },
+  "noAnswerFound": {
+    "message": "No se encontró respuesta. Por favor, inténtalo de nuevo.",
+    "description": "Message shown when no answer is found"
+  },
+  "loginRequiredMessage": {
+    "message": "Necesitas iniciar sesión para usar esta función.",
+    "description": "Message shown when login is required"
+  },
+  "processingMessage": {
+    "message": "Procesando tu solicitud...",
+    "description": "Message shown while processing"
+  },
+  "screenshotInstructions": {
+    "message": "Haz clic y arrastra para seleccionar área para captura de pantalla. Presiona ESC para cancelar.",
+    "description": "Instructions for screenshot tool"
+  },
+  "responseLanguage": {
+    "message": "Idioma de Respuesta: $LANG$",
+    "description": "Label for response language",
+    "placeholders": {
+      "lang": {
+        "content": "$1",
+        "example": "ES"
+      }
+    }
+  },
+  "contextMenuNotSupported": {
+    "message": "Menú contextual no compatible en página PDF.",
+    "description": "Message shown when context menu is not supported"
+  },
+  "commandAskCollegeHelp": {
+    "message": "Preguntar a la IA College Help (analizar texto seleccionado)",
+    "description": "Description for the ask college help keyboard command"
+  },
+  "commandTakeScreenshot": {
+    "message": "Tomar captura de pantalla (capturar área para análisis)",
+    "description": "Description for the take screenshot keyboard command"
+  },
+  "pricingTooltip": {
+    "message": "Planes o Precios",
+    "description": "Tooltip para el botón de precios"
+  },
+  "userProfile": {
+    "message": "Usuario",
+    "description": "Texto por defecto del perfil de usuario"
+  },
+  "planFree": {
+    "message": "Gratis",
+    "description": "Etiqueta del plan gratuito"
+  },
+  "creditsCount": {
+    "message": "0",
+    "description": "Contador de créditos por defecto"
+  },
+  "keyboardShortcuts": {
+    "message": "Atajos de Teclado",
+    "description": "Etiqueta para la sección de atajos de teclado"
+  },
+  "configureShortcuts": {
+    "message": "Configurar Atajos",
+    "description": "Texto del botón para configurar atajos"
+  },
+  "upgradePlan": {
+    "message": "Actualizar",
+    "description": "Texto del botón para actualizar plan"
+  },
+  "creditsRemaining": {
+    "message": "restantes",
+    "description": "Etiqueta para créditos restantes"
+  },
+  "usageToday": {
+    "message": "usados hoy",
+    "description": "Etiqueta para uso diario"
+  },
+  "planPremium": {
+    "message": "Premium",
+    "description": "Etiqueta del plan premium"
+  },
+  "onboardingTitle": {
+    "message": "Bienvenido a CollegeHelpAI",
+    "description": "Título principal de la página de bienvenida"
+  },
+  "onboardingSubtitle": {
+    "message": "Tu compañero de estudio inteligente para obtener respuestas instantáneas a cualquier pregunta",
+    "description": "Subtítulo principal de la página de bienvenida"
+  },
+  "registerNow": {
+    "message": "🚀 Registrarse ahora",
+    "description": "Texto del botón de registro"
+  },
+  "signIn": {
+    "message": "✨ Iniciar sesión",
+    "description": "Texto del botón de iniciar sesión"
+  },
+  "upgradeTitle": {
+    "message": "🎓 Desbloquea tu potencial académico",
+    "description": "Título de la sección de actualización"
+  },
+  "upgradeSubtitle": {
+    "message": "¡Obtén acceso ilimitado a herramientas de IA avanzadas y mejora tus calificaciones al instante!",
+    "description": "Subtítulo de la sección de actualización"
+  },
+  "unlimitedQuestions": {
+    "message": "∞ Preguntas ilimitadas",
+    "description": "Característica de preguntas ilimitadas"
+  },
+  "prioritySupport": {
+    "message": "⚡ Soporte prioritario",
+    "description": "Característica de soporte prioritario"
+  },
+  "advancedFeatures": {
+    "message": "🔬 Características avanzadas",
+    "description": "Texto de características avanzadas"
+  },
+  "noWatermarks": {
+    "message": "🎨 Sin marcas de agua",
+    "description": "Característica sin marcas de agua"
+  },
+  "subscribeNow": {
+    "message": "💎 Suscribirse ahora - Ahorra 40%",
+    "description": "Texto del botón de suscripción"
+  },
+  "registrationRequired": {
+    "message": "📚 Registro requerido",
+    "description": "Título de la sección de registro requerido"
+  },
+  "registrationDesc": {
+    "message": "Crea tu cuenta gratuita para acceder a todas las funciones y comenzar tu viaje académico con asistencia de IA.",
+    "description": "Descripción de la sección de registro"
+  },
+  "createAccount": {
+    "message": "📝 Crear cuenta gratuita",
+    "description": "Texto del botón crear cuenta"
+  },
+  "featuresTitle": {
+    "message": "🌟 Características poderosas",
+    "description": "Título de la sección de características"
+  },
+  "featureTextTitle": {
+    "message": "Análisis de texto inteligente",
+    "description": "Título de la característica de análisis de texto"
+  },
+  "featureTextDesc": {
+    "message": "Selecciona cualquier texto en una página web y obtén explicaciones instantáneas, resúmenes y análisis detallados.",
+    "description": "Descripción de la característica de análisis de texto"
+  },
+  "featureScreenshotTitle": {
+    "message": "Solucionador de capturas de pantalla con IA",
+    "description": "Título de la característica de captura de pantalla"
+  },
+  "featureScreenshotDesc": {
+    "message": "Toma capturas de pantalla de problemas matemáticos, diagramas o preguntas y obtén soluciones paso a paso.",
+    "description": "Descripción de la característica de captura de pantalla"
+  },
+  "featureMultilingualTitle": {
+    "message": "Soporte de idiomas global",
+    "description": "Título de la característica multilingüe"
+  },
+  "featureMultilingualDesc": {
+    "message": "Disponible en múltiples idiomas con traducción en tiempo real y respuestas localizadas.",
+    "description": "Descripción de la característica multilingüe"
+  },
+  "featureSpeedTitle": {
+    "message": "Súper rápido",
+    "description": "Título de la característica de velocidad"
+  },
+  "featureSpeedDesc": {
+    "message": "Obtén respuestas en segundos con nuestro motor de IA optimizado diseñado para la excelencia académica.",
+    "description": "Descripción de la característica de velocidad"
+  },
+  "featureSecurityTitle": {
+    "message": "Privacidad protegida",
+    "description": "Título de la característica de seguridad"
+  },
+  "featureSecurityDesc": {
+    "message": "Tus datos están encriptados y seguros. Respetamos tu privacidad e integridad académica.",
+    "description": "Descripción de la característica de seguridad"
+  },
+  "featureAnalyticsTitle": {
+    "message": "Seguimiento de progreso",
+    "description": "Título de la característica de análisis"
+  },
+  "featureAnalyticsDesc": {
+    "message": "Monitorea tu progreso de aprendizaje y ve análisis detallados de tus sesiones de estudio.",
+    "description": "Descripción de la característica de análisis"
+  },
+  "footerQuickLinks": {
+    "message": "Enlaces rápidos",
+    "description": "Título de enlaces rápidos del pie de página"
+  },
+  "footerRegister": {
+    "message": "Crear cuenta",
+    "description": "Enlace de registro del pie de página"
+  },
+  "footerSignIn": {
+    "message": "Iniciar sesión",
+    "description": "Enlace de iniciar sesión del pie de página"
+  },
+  "footerSubscribe": {
+    "message": "Suscribirse",
+    "description": "Enlace de suscripción del pie de página"
+  },
+  "footerSupport": {
+    "message": "Soporte",
+    "description": "Título de la sección de soporte del pie de página"
+  },
+  "footerFAQ": {
+    "message": "Preguntas frecuentes",
+    "description": "Enlace de FAQ del pie de página"
+  },
+  "footerContact": {
+    "message": "Contáctanos",
+    "description": "Enlace de contacto del pie de página"
+  },
+  "footerPrivacy": {
+    "message": "Política de privacidad",
+    "description": "Enlace de política de privacidad del pie de página"
+  },
+  "footerCopyright": {
+    "message": "© 2025 CollegeHelpAI. Todos los derechos reservados. Empoderando estudiantes en todo el mundo.",
+    "description": "Texto de copyright del pie de página"
+  }
+}

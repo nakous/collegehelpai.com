@@ -1,0 +1,403 @@
+/**
+ * Accessibility Styles for WCAG 2.1 AA Compliance
+ * Cobra Theme - WordPress
+ * 
+ * This file contains styles to improve accessibility:
+ * - Focus indicators
+ * - High contrast mode support
+ * - Screen reader utilities
+ * - Keyboard navigation
+ * - Color contrast improvements
+ */
+
+/* ==========================================================================
+   SKIP LINKS
+   ========================================================================== */
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    z-index: 999999;
+    padding: 8px 16px;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 6px;
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+/* ==========================================================================
+   FOCUS INDICATORS
+   ========================================================================== */
+
+/* Enhanced focus styles for all interactive elements */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus,
+[tabindex]:focus,
+.menu-toggle:focus,
+.user-toggle:focus {
+    outline: 2px solid #0073aa;
+    outline-offset: 2px;
+    border-radius: 2px;
+    box-shadow: 0 0 0 3px rgba(0, 115, 170, 0.3);
+}
+
+/* High contrast focus for dark backgrounds */
+.the-header a:focus,
+.the-footer a:focus,
+.hero .btn:focus {
+    outline-color: #fff;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+/* Focus for navigation items */
+.primary-menu a:focus,
+.footer-menu-list a:focus {
+    background-color: rgba(0, 115, 170, 0.1);
+    border-radius: 4px;
+}
+
+/* Enhanced focus for buttons */
+.btn:focus,
+.auth-button:focus,
+.install-btn:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 0 0 3px rgba(0, 115, 170, 0.3), 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   SCREEN READER UTILITIES
+   ========================================================================== */
+
+.screen-reader-text,
+.sr-only {
+    position: absolute !important;
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    margin: -1px;
+    white-space: nowrap;
+}
+
+.screen-reader-text:focus,
+.sr-only:focus {
+    position: static !important;
+    clip-path: none;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    background: #000;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 3px;
+    z-index: 999999;
+}
+
+/* ==========================================================================
+   KEYBOARD NAVIGATION
+   ========================================================================== */
+
+/* Enhance keyboard navigation for dropdowns */
+.user-dropdown {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.user-menu:focus-within .user-dropdown,
+.user-toggle:focus + .user-dropdown,
+.user-dropdown:focus-within {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Mobile menu keyboard accessibility */
+.menu-toggle[aria-expanded="true"] + .primary-menu-container {
+    display: block;
+}
+
+.primary-menu-container {
+    transition: all 0.3s ease;
+}
+
+/* Ensure focus stays within modal/dropdown content */
+.user-dropdown a:focus {
+    background-color: rgba(0, 115, 170, 0.1);
+}
+
+/* ==========================================================================
+   HIGH CONTRAST AND COLOR ACCESSIBILITY
+   ========================================================================== */
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .btn,
+    .auth-button,
+    .install-btn {
+        border: 2px solid;
+        background-color: transparent;
+        color: inherit;
+    }
+    
+    .hero-content h1,
+    .section-title h2 {
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    }
+    
+    .social-link {
+        border: 1px solid;
+    }
+}
+
+/* Color contrast improvements */
+.hero-content p {
+    color: #333;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Ensure adequate contrast for interactive elements */
+.auth-button {
+    background-color: #0073aa;
+    color: #fff;
+    border: 2px solid transparent;
+}
+
+.auth-button:hover,
+.auth-button:focus {
+    background-color: #005a87;
+    border-color: #0073aa;
+}
+
+/* ==========================================================================
+   MOTION AND ANIMATION ACCESSIBILITY
+   ========================================================================== */
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .reveal,
+    .animate-fadeIn {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+    
+    video {
+        animation: none;
+    }
+}
+
+/* ==========================================================================
+   FORM ACCESSIBILITY
+   ========================================================================== */
+
+/* Enhanced form field styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+textarea,
+select {
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 16px; /* Prevents zoom on mobile */
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #0073aa;
+    box-shadow: 0 0 0 2px rgba(0, 115, 170, 0.2);
+}
+
+/* Error states */
+/* .error input,
+input.error,
+input:invalid {
+    border-color: #d63638;
+    box-shadow: 0 0 0 2px rgba(214, 54, 56, 0.2);
+} */
+
+/* Required field indicators */
+/* .required::after {
+    content: " *";
+    color: #d63638;
+    font-weight: bold;
+} */
+
+/* ==========================================================================
+   MOBILE ACCESSIBILITY
+   ========================================================================== */
+
+/* Minimum touch target size (44px x 44px) */
+@media (max-width: 768px) {
+    .menu-toggle,
+    .user-toggle,
+    .auth-button,
+    .social-link,
+    .btn {
+        min-height: 44px;
+        min-width: 44px;
+        padding: 12px;
+    }
+    
+    /* Larger tap targets for navigation */
+    .primary-menu a,
+    .footer-menu-list a {
+        display: block;
+        padding: 16px 12px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* ==========================================================================
+   VIDEO AND MEDIA ACCESSIBILITY
+   ========================================================================== */
+
+/* Ensure videos have proper controls */
+video {
+    background-color: #000;
+}
+
+iframe {
+    border: 0;
+}
+
+/* Caption styling */
+::cue {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.4;
+    padding: 4px 8px;
+}
+
+/* ==========================================================================
+   LOADING AND STATUS INDICATORS
+   ========================================================================== */
+
+/* Loading state accessibility */
+.loading {
+    position: relative;
+}
+
+.loading::after {
+    content: "Loading...";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Status messages */
+.success-message,
+.error-message,
+.info-message {
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.info-message {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+/* ==========================================================================
+   RESPONSIVE TEXT AND READABILITY
+   ========================================================================== */
+
+/* Ensure readable line heights */
+body {
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3;
+}
+
+/* Responsive font sizes for better readability */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* ==========================================================================
+   PRINT ACCESSIBILITY
+   ========================================================================== */
+
+@media print {
+    .skip-link,
+    .menu-toggle,
+    .user-menu,
+    .auth-buttons,
+    .social-links {
+        display: none !important;
+    }
+    
+    a::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+    
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+        content: "";
+    }
+}

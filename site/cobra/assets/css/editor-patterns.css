@@ -1,0 +1,53 @@
+/* Editor-specific overrides */
+.editor-styles-wrapper .pricing-section,
+.editor-styles-wrapper .chrome-extension-hero,
+.editor-styles-wrapper .split-content-section,
+.editor-styles-wrapper .get-started-section {
+    /* Add padding to make editing easier */
+    padding: 40px !important;
+    margin: 20px 0;
+    /* Add border to visualize the section better in editor */
+    border: 1px dashed #ddd;
+}
+
+/* Make buttons non-interactive in editor */
+.editor-styles-wrapper .toggle-button,
+.editor-styles-wrapper .subscribe-button,
+.editor-styles-wrapper .chrome-button {
+    pointer-events: none;
+}
+
+/* Fix font sizes in editor */
+.editor-styles-wrapper .hero-title,
+.editor-styles-wrapper .content-title,
+.editor-styles-wrapper .get-started-title {
+    font-size: 2.5rem !important;
+}
+
+/* Fix container widths in editor */
+.editor-styles-wrapper .split-content-wrapper,
+.editor-styles-wrapper .pricing-cards {
+    max-width: 100%;
+}
+
+/* Add visual feedback for interactive elements */
+.editor-styles-wrapper [class*="button"] {
+    position: relative;
+}
+
+.editor-styles-wrapper [class*="button"]::after {
+    content: "Button - Click to edit text";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    color: #666;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.editor-styles-wrapper [class*="button"]:hover::after {
+    opacity: 1;
+}
